@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "objectgraph"
+author = "Ronald Oussoren"
+author-email = "ronaldoussoren@mac.com"
+home-page = "https://objectgraph.readthedocs.io/"
+description-file = "ReadMe.rst"
+requires = [
+    "typing_extensions",
+]
+requires-python = ">=3.6,<4"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.flit.metadata.urls]
+"Documentation" = "https://objectgraph.readthedocs.io/"
+"Source Code" = "https://bitbucket.org/ronaldoussoren/objectgraph/src/default/"
+"Issue Tracker" = "https://bitbucket.org/ronaldoussoren/objectgraph/issues?status=new&status=open"
+"Supporting" = "https://blog.ronaldoussoren.net/support/"

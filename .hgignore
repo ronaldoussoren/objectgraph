@@ -1,0 +1,18 @@
+
+syntax: glob
+doc/_build
+objectgraph.egg-info
+dist
+build
+.package
+*.swp
+*.pyc
+*.dSYM
+*.pyo
+*.so
+__pycache__
+htmlcov
+.coverage*
+.DS_Store
+.tox
+.mypy_cache
