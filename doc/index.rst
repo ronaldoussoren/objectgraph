@@ -26,9 +26,6 @@ Objectgraph supports Python 3.6 and later on all platforms. The code
 is developed using Python 3.7 on macOS, but and regularly tested with
 other Python versions and on Linux and Windows.
 
-.. todo::
-
-   Insert links to CI status
 
 Using objectgraph
 ------------------
@@ -37,11 +34,7 @@ Using objectgraph
    :maxdepth: 1
 
    objectgraph
-
-.. todo::
-
-   Examples
-
+   examples
 
 Development
 -----------
