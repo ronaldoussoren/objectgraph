@@ -9,7 +9,7 @@ with an identifier and edges can have associated data.
 Release information
 -------------------
 
-Objectgraph 1.0a0 was released on YYYY-mm-dd. See the :doc:`changelog <changelog>`
+Objectgraph 1.0a0 was released on 2019-01-26. See the :doc:`changelog <changelog>`
 for information on this release.
 
 
