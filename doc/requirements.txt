@@ -1,0 +1,4 @@
+sphinx
+sphinxcontrib.napoleon
+typing_extensions
+sphinx-autodoc-typehints
