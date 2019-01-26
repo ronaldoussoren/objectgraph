@@ -11,6 +11,8 @@ The model for edges is slighly non-standard: There can be multiple
 edges between nodes, but all edges with the same attributes are
 collapsed into one edge.
 
+There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
+
 Historic
 ........
 
