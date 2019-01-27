@@ -11,4 +11,4 @@ are collapsed into one edge.
 """
 __all__ = ("ObjectGraph",)
 __version__ = "1.0a0"
-from ._objectgraph import ObjectGraph
+from ._objectgraph import ObjectGraph, NODE_TYPE, EDGE_TYPE

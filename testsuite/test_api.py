@@ -2,7 +2,7 @@ import unittest
 
 import objectgraph
 
-PUBLIC_SYMBOLS = {"ObjectGraph"}
+PUBLIC_SYMBOLS = {"ObjectGraph", "NODE_TYPE", "EDGE_TYPE"}
 
 PYTHON_SYMBOLS = {
     "__loader__",

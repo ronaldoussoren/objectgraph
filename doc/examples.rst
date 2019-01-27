@@ -1,5 +1,5 @@
-Examples on using objectgraph
------------------------------
+Examples for using objectgraph
+------------------------------
 
 A basic node class
 ..................

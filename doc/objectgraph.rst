@@ -47,3 +47,18 @@ Reporting on a graph
 .. automethod:: objectgraph.ObjectGraph.incoming
 
 .. automethod:: objectgraph.ObjectGraph.outgoing
+
+Mypy support
+~~~~~~~~~~~~
+
+.. data:: objectgraph.NODE_TYPE
+
+   This a type variable representing
+   the interface for nodes: Nodes should have an
+   string-valued attribute named "identifier".
+
+.. data:: objectgraph.EDGE_TYPE
+
+   This type is a type variable representing
+   the interface for edges: Edges should be
+   hashable.
