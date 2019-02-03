@@ -14,10 +14,9 @@ environment:
   - WIN_PYTHON: C:\\Python37
     LNX_PYTHON: 3.7
 
-   exclude:
-       image:
-        - Ubuntu
-       LNX_PYTHON: 3.7
+  exclude:
+    image: Ubuntu
+    LNX_PYTHON: 3.7
 build: off
 install:
 - cmd: '%WIN_PYTHON%\\python.exe -m pip install typing_extensions'
