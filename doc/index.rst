@@ -26,6 +26,9 @@ Objectgraph supports Python 3.6 and later on all platforms. The code
 is developed using Python 3.7 on macOS, but and regularly tested with
 other Python versions and on Linux and Windows.
 
+.. image: https://ci.appveyor.com/api/projects/status/nh82b9hy2h7e0dkf?svg=true
+   :alt: Windows Build Status
+
 
 Using objectgraph
 ------------------
