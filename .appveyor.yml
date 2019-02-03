@@ -1,0 +1,19 @@
+version: '{branch}-{build}'
+branches:
+  only:
+  - default
+environment:
+  matrix:
+  - PYTHON: C:\\Python36
+  - PYTHON: C:\\Python37
+build: off
+test_script:
+- cmd: '%PYTHON%\\python.exe -m unittest -v'
+notifications:
+- provider: Email
+  to:
+  - ronaldoussoren@mac.com
+  subject: 'appveyor: objectgraph'
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: false
