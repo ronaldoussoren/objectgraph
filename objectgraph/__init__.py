@@ -9,6 +9,6 @@ Edges between nodes have arbrary (hashable) attributes,
 where edges with the same source, destination and attributes
 are collapsed into one edge.
 """
-__all__ = ("ObjectGraph",)
+__all__ = ("ObjectGraph", "NODE_TYPE", "EDGE_TYPE")
 __version__ = "1.0a1"
 from ._objectgraph import ObjectGraph, NODE_TYPE, EDGE_TYPE
