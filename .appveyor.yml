@@ -1,7 +1,7 @@
 image:
 - Visual Studio 2017
 - Ubuntu
-stack: python 3.7
+stack: python3.6, python 3.7
 version: '{branch}-{build}'
 branches:
   only:
@@ -19,7 +19,12 @@ install:
 - sh: '$LNX_PYTHON -m pip install typing_extensions'
 test_script:
 - cmd: '%WIN_PYTHON%\\python.exe -m unittest -v'
-  sh: '$LNX_PYTHON -m unittest -v'
+- sh: '$LNX_PYTHON -m unittest -v'
+- sh: 'which python3'
+- sh: 'which python36'
+- sh: 'which python37'
+- sh: 'which python3.6'
+- sh: 'which python3.7'
 notifications:
 - provider: Email
   to:
