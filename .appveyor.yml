@@ -1,17 +1,23 @@
 image: Visual Studio 2017
+image: Ubuntu
 version: '{branch}-{build}'
 branches:
   only:
   - default
 environment:
   matrix:
-  - PYTHON: C:\\Python36
-  - PYTHON: C:\\Python37
+  - WIN_PYTHON: C:\\Python36
+    LNX_PYTHON: python3.6
+
+  - WIN_PYTHON: C:\\Python37
+    LNX_PYTHON: python3.7
 build: off
 install:
 - cmd: '%PYTHON%\\python.exe -m pip install typing_extensions'
+- sh: '$LNX_PYTHON -m pip install typing_extensions'
 test_script:
 - cmd: '%PYTHON%\\python.exe -m unittest -v'
+  sh: '$LNX_PYTHON -m unittest -v'
 notifications:
 - provider: Email
   to:
