@@ -9,10 +9,10 @@ branches:
 environment:
   matrix:
   - WIN_PYTHON: C:\\Python36
-    LNX_PYTHON: python3.6
+    LNX_PYTHON: /opt/python3.6/bin/python3.6
 
   - WIN_PYTHON: C:\\Python37
-    LNX_PYTHON: python3.7
+    LNX_PYTHON: /opt/python3.7/bin/python3.7
 build: off
 install:
 - cmd: '%WIN_PYTHON%\\python.exe -m pip install typing_extensions'
