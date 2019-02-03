@@ -8,7 +8,7 @@ environment:
   - PYTHON: C:\\Python37
 build: off
 install:
-- cmd: '%PYTHON%\\python.exe -m pip install typing_extension'
+- cmd: '%PYTHON%\\python.exe -m pip install typing_extensions'
 test_script:
 - cmd: '%PYTHON%\\python.exe -m unittest -v'
 notifications:
