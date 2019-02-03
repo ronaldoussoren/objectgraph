@@ -9,22 +9,17 @@ branches:
 environment:
   matrix:
   - WIN_PYTHON: C:\\Python36
-    LNX_PYTHON: python3
+    LNX_PYTHON: 3.6
 
   - WIN_PYTHON: C:\\Python37
-    LNX_PYTHON: python3
+    LNX_PYTHON: 3.7
 build: off
 install:
 - cmd: '%WIN_PYTHON%\\python.exe -m pip install typing_extensions'
-- sh: '$LNX_PYTHON -m pip install typing_extensions'
+- sh: '~/venv$LNX_PYTHON*/bin/python3 -m pip install typing_extensions'
 test_script:
 - cmd: '%WIN_PYTHON%\\python.exe -m unittest -v'
-- sh: '$LNX_PYTHON -m unittest -v'
-- sh: 'which python3'
-- sh: 'which python36'
-- sh: 'which python37'
-- sh: 'which python3.6'
-- sh: 'which python3.7'
+- sh: '~/venv$LNX_PYTHON*/bin/python3 -m unittest -v'
 notifications:
 - provider: Email
   to:
