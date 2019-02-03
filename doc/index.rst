@@ -29,8 +29,7 @@ other Python versions and on Linux and Windows.
 Windows and Linux build status:
 
 .. image:: https://ci.appveyor.com/api/projects/status/nh82b9hy2h7e0dkf?svg=true
-   :alt: Windows Build Status
-
+   :target: https://ci.appveyor.com/project/RonaldOussoren/modulegraph2
 
 Using objectgraph
 ------------------

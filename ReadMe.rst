@@ -16,6 +16,7 @@ There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
 Windows and Linux build status:
 
 .. image:: https://ci.appveyor.com/api/projects/status/nh82b9hy2h7e0dkf?svg=true
+   :target: https://ci.appveyor.com/project/RonaldOussoren/objectgraph
 
 Historic
 ........
