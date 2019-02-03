@@ -14,10 +14,10 @@ environment:
     LNX_PYTHON: python3.7
 build: off
 install:
-- cmd: '%PYTHON%\\python.exe -m pip install typing_extensions'
+- cmd: '%WIN_PYTHON%\\python.exe -m pip install typing_extensions'
 - sh: '$LNX_PYTHON -m pip install typing_extensions'
 test_script:
-- cmd: '%PYTHON%\\python.exe -m unittest -v'
+- cmd: '%WIN_PYTHON%\\python.exe -m unittest -v'
   sh: '$LNX_PYTHON -m unittest -v'
 notifications:
 - provider: Email
