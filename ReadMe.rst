@@ -13,7 +13,7 @@ collapsed into one edge.
 
 There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
 
-Windows build status:
+Windows and Linux build status:
 
 .. image:: https://ci.appveyor.com/api/projects/status/nh82b9hy2h7e0dkf?svg=true
 
