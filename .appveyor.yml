@@ -1,6 +1,7 @@
 image:
 - Visual Studio 2017
 - Ubuntu
+stack: python 3.6, python 3.7
 version: '{branch}-{build}'
 branches:
   only:
