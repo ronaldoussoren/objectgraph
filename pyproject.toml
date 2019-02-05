@@ -22,6 +22,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Development Status :: 4 - Beta",
 ]
+license="MIT"
 
 [tool.flit.metadata.urls]
 "Documentation" = "https://objectgraph.readthedocs.io/"
