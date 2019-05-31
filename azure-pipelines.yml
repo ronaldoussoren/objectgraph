@@ -25,9 +25,27 @@ jobs:
 
   - script: |
       python -m pip install --upgrade pip
-      pip install coverage
+      pip install unittest-xml-reporting coverage typing_extensions
     displayName: 'Install dependencies'
 
   - script: |
-      python -m coverage run --parallel -m unittest -v
+      test -d test-results || mkdir test-results
+      python -m coverage run -m unittest-xml-reporting discover -o test-results
     displayName: 'Run tests'
+
+  - script: |
+       python -m coverage xml
+       python -m coverage html
+    displayName: Report coverage
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+      reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
+
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFiles: '**/test-*.xml'
+      testRunTitle: 'Publish test results for Python $(python.version)'
