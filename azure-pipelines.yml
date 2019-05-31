@@ -6,9 +6,10 @@
 trigger:
 - master
 
+jobs:
 - job: macOS
   pool:
-    vmImage: 'ubuntu-latest'
+    vmImage: 'macOS-10.13'
   strategy:
     matrix:
       Python36:
