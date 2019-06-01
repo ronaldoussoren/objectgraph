@@ -13,10 +13,10 @@ collapsed into one edge.
 
 There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
 
-Windows and Linux build status:
+Build and test status (Linux, macOS, Windows):
 
-.. image:: https://ci.appveyor.com/api/projects/status/nh82b9hy2h7e0dkf?svg=true
-   :target: https://ci.appveyor.com/project/RonaldOussoren/objectgraph
+.. image:: https://dev.azure.com/ronaldoussoren/objectgraph/_apis/build/status/ronaldoussoren.objectgraph?branchName=master
+   :target: https://dev.azure.com/ronaldoussoren/objectgraph/_build/latest?definitionId=1&branchName=master
 
 Historic
 ........
