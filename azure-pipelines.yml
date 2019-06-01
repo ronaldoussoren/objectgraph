@@ -29,8 +29,7 @@ jobs:
     displayName: 'Install dependencies'
 
   - script: |
-      test -d test-results || mkdir test-results
-      python -m coverage run -m unittest-xml-reporting discover -o test-results
+      python -m coverage run -m xmlrunner discover -o test-results
     displayName: 'Run tests'
 
   - script: |
@@ -47,5 +46,5 @@ jobs:
   - task: PublishTestResults@2
     condition: succeededOrFailed()
     inputs:
-      testResultsFiles: '**/test-*.xml'
+      testResultsFiles: '**/TEST-*.xml'
       testRunTitle: 'Publish test results for Python $(python.version)'
