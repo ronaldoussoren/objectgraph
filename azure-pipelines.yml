@@ -9,56 +9,54 @@ trigger:
 strategy:
   matrix:
     macOS_py37:
-      VM_IMAGE: 'macOS-10.13'
+      vm.image: 'macOS-10.13'
       python.version: '3.7'
     linux_py37:
-      VM_IMAGE: 'ubuntu-16.04'
+      vm.image: 'ubuntu-16.04'
       python.version: '3.7'
     windows_py37:
-      VM_IMAGE: 'windows-2019'
+      vm.image: 'windows-2019'
       python.version: '3.7'
     macOS_py36:
-      VM_IMAGE: 'macOS-10.13'
+      vm.image: 'macOS-10.13'
       python.version: '3.6'
     linux_py36:
-      VM_IMAGE: 'ubuntu-16.04'
+      vm.image: 'ubuntu-16.04'
       python.version: '3.6'
     windows_py36:
-      VM_IMAGE: 'windows-2019'
+      vm.image: 'windows-2019'
       python.version: '3.6'
 
-jobs:
-- job: Running Tests
-  pool:
-    vmImage: '${VM_IMAGE}'
+pool:
+  vmImage: '$(vm.image)'
 
-  steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(python.version)'
-    displayName: 'Use Python $(python.version)'
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version) on $(vm.image}'
 
-  - script: |
-      python -m pip install --upgrade pip
-      pip install unittest-xml-reporting coverage typing_extensions
-    displayName: 'Install dependencies'
+- script: |
+    python -m pip install --upgrade pip
+    pip install unittest-xml-reporting coverage typing_extensions
+  displayName: 'Install dependencies'
 
-  - script: |
-      python -m coverage run -m xmlrunner discover -o test-results
-    displayName: 'Run tests'
+- script: |
+    python -m coverage run -m xmlrunner discover -o test-results
+  displayName: 'Run tests'
 
-  - script: |
-       python -m coverage xml
-    displayName: Report coverage
+- script: |
+     python -m coverage xml
+  displayName: Report coverage
 
-  - task: PublishCodeCoverageResults@1
-    inputs:
-      codeCoverageTool: Cobertura
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-      reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 
-  - task: PublishTestResults@2
-    condition: succeededOrFailed()
-    inputs:
-      testResultsFiles: '**/TEST-*.xml'
-      testRunTitle: 'Publish test results for Python $(python.version)'
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'Publish test results for Python $(python.version)'
