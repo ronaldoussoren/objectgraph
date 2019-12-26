@@ -6,10 +6,18 @@
 trigger:
 - master
 
+schedule:
+- cron: "0 0 * * 0"
+  displayName: Weekly midnight build
+  branches:
+    include:
+    - master
+  always: true
+
 strategy:
   matrix:
     macOS_py37:
-      vm.image: 'macOS-10.13'
+      vm.image: 'macOS-10.14'
       python.version: '3.7'
     linux_py37:
       vm.image: 'ubuntu-16.04'
