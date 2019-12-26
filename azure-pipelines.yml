@@ -6,7 +6,7 @@
 trigger:
 - master
 
-schedule:
+schedules:
 - cron: "0 0 * * 0"
   displayName: Weekly midnight build
   branches:
