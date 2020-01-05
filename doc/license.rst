@@ -1,7 +1,7 @@
 License
 =======
 
-Copyright (c) 2019 Ronald Oussoren
+Copyright (c) 2019-2020 Ronald Oussoren
 
 MIT License
 ...........
