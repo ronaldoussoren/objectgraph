@@ -1,6 +1,16 @@
 Release history
 ===============
 
+1.0.1
+-----
+
+- Migrate to GitHub
+
+1.0
+---
+
+- No changes for a year, mark as stable
+
 1.0a1
 -----
 
