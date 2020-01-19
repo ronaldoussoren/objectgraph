@@ -53,9 +53,9 @@ Development
 Online Resources
 ................
 
-* `Sourcecode repository on bitbucket <http://bitbucket.org/ronaldoussoren/objectgraph/>`_
+* `Sourcecode repository on GitHub <https://github.com/ronaldoussoren/objectgraph/>`_
 
-* `The issue tracker <http://bitbucket.org/ronaldoussoren/objectgraph/issues>`_
+* `The issue tracker <https://github.com/ronaldoussoren/objectgraph/issues>`_
 
 Indices and tables
 ------------------
