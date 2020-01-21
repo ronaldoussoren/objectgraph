@@ -16,8 +16,8 @@ There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
 CI Status
 .........
 
-* ..image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
-* ..image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
+.. image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
+.. image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
 
 Historic
 ........
