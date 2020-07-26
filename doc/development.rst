@@ -24,11 +24,26 @@ is not verified using mypy.
 Testing
 -------
 
-The production code (package "modulegraph2") should have full
+The production code (package "objectgraph") should have full
 test coverage. Take care to verify that new code is actually tested
 and not just accidently covered.
 
 CI
 --
 
-Information about the CI setup (macOS, Windows, Linux; Py3.6, 3.7 and 3.8)
+This project uses GitHub Actions for CI and includes publishing new
+releases to Test and Prod PyPI.
+
+
+Releasing
+---------
+
+* Check the release notes
+
+* Make sure CI says the build is OK
+
+* Tag the release and push to GitHub
+
+* Create a GitHub release
+
+* Check PyPI
