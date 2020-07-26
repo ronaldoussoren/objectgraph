@@ -1,4 +1,4 @@
-name: Lint
+name: Run linting tools (isort, black, flake8)
 
 on: [push, pull_request]
 
