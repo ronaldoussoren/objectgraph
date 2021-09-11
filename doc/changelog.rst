@@ -1,11 +1,15 @@
 Release history
 ===============
 
+1.0.3
+-----
+
+- Mention python 3.10 in project metadata
+
 1.0.2
 -----
 
 - Fix typo in github link
-- Automate publication of packages
 
 1.0.1
 -----

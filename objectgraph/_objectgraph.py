@@ -58,7 +58,7 @@ class ObjectGraph(Generic[NODE_TYPE, EDGE_TYPE]):
         self._edges: Dict[Tuple[str, str], Set[EDGE_TYPE]] = {}
 
     def __repr__(self):
-        return f"<{type(self).__name__} with {len(self._roots)} roots, {len(self._nodes)} nodes and {len(self._edges)} edges>"  # noqa:E501
+        return f"<{type(self).__name__} with {len(self._roots)} roots, {len(self._nodes)} nodes and {len(self._edges)} edges>"  # noqa:E501, B950
 
     def roots(self) -> Iterator[NODE_TYPE]:
         """
@@ -227,7 +227,7 @@ class ObjectGraph(Generic[NODE_TYPE, EDGE_TYPE]):
 
         except KeyError:
             raise KeyError(
-                f"There is no edge between {from_node.identifier} and {to_node.identifier} with attributes {edge_attributes!r}"  # noqa:E501
+                f"There is no edge between {from_node.identifier} and {to_node.identifier} with attributes {edge_attributes!r}"  # noqa:E501, B950
             ) from None
 
     def remove_all_edges(
@@ -257,7 +257,7 @@ class ObjectGraph(Generic[NODE_TYPE, EDGE_TYPE]):
 
         except KeyError:
             raise KeyError(
-                f"There is no edge between {from_node.identifier} and {to_node.identifier}"  # noqa:E501
+                f"There is no edge between {from_node.identifier} and {to_node.identifier}"  # noqa:E501, B950
             ) from None
 
     def find_node(self, node: Union[str, NODE_TYPE]) -> Optional[NODE_TYPE]:
@@ -317,7 +317,7 @@ class ObjectGraph(Generic[NODE_TYPE, EDGE_TYPE]):
             return self._edges[(from_node.identifier, to_node.identifier)]
         except KeyError:
             raise KeyError(
-                f"There is no edge between {from_node.identifier} and {to_node.identifier}"  # noqa:E501
+                f"There is no edge between {from_node.identifier} and {to_node.identifier}"  # noqa:E501, B950
             ) from None
 
     def outgoing(

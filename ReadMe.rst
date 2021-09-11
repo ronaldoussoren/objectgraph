@@ -13,15 +13,6 @@ collapsed into one edge.
 
 There is `documentation at readthedocs <https://objectgraph.readthedocs.io>`_
 
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/psf/black
-
-CI Status
-.........
-
-.. image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
-.. image:: https://github.com/ronaldoussoren/objectgraph/workflows/Lint/badge.svg
-
 Historic
 ........
 
