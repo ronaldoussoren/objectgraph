@@ -1,6 +1,8 @@
 """
 A basic graph datastructure
 """
+# isort misbehaves here.
+# isort: skip_file
 from typing import (
     Dict,
     Generic,

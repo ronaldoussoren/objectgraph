@@ -44,8 +44,8 @@ source_encoding = "utf-8"
 master_doc = "index"
 
 # General information about the project.
-project = u"objectgraph"
-copyright = u"2019, Ronald Oussoren"
+project = "objectgraph"
+copyright = "2019, Ronald Oussoren"
 
 # The short X.Y version.
 version = get_version()
@@ -89,8 +89,8 @@ latex_documents = [
     (
         "index",
         "objectgraph.tex",
-        u"objectgraph Documentation",
-        u"Ronald Oussoren",
+        "objectgraph Documentation",
+        "Ronald Oussoren",
         "manual",
     )
 ]
