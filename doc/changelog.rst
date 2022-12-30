@@ -1,6 +1,11 @@
 Release history
 ===============
 
+1.0.4
+-----
+
+- Mention python 3.11 in project metadata
+
 1.0.3
 -----
 

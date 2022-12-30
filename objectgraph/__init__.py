@@ -10,5 +10,5 @@ where edges with the same source, destination and attributes
 are collapsed into one edge.
 """
 __all__ = ("ObjectGraph", "NODE_TYPE", "EDGE_TYPE")
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 from ._objectgraph import EDGE_TYPE, NODE_TYPE, ObjectGraph
