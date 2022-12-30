@@ -1,6 +1,6 @@
 name: Run Testsuite using Tox
 
-on: [push, pull_request]
+on: [push, pull_request, workflow]
 
 jobs:
   build:
