@@ -1,6 +1,13 @@
 Release history
 ===============
 
+1.0.5
+-----
+
+- Mention python 3.12, 3.13, 3.14 and 3.15  in project metadata
+
+- Mention free-threading in project metadata
+
 1.0.4
 -----
 
