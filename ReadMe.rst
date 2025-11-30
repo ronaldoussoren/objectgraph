@@ -27,10 +27,10 @@ Python 3 code base and full test coverage.
 .. |pypi-version| image:: https://img.shields.io/pypi/v/objectgraph.svg
    :target: https://pypi.org/project/objectgraph
 
-.. |test-badge| image:: https://github.com/ronaldoussoren/modulegraph2/actions/workflows/test.yml/badge.svg
+.. |test-badge| image:: https://github.com/ronaldoussoren/objectgraph/actions/workflows/test.yml/badge.svg
    :target: https://github.com/ronaldoussoren/objectgraph/actions/workflows/test.yml
 
-.. |lint-badge| image:: https://github.com/ronaldoussoren/modulegraph2/actions/workflows/lint.yml/badge.svg
+.. |lint-badge| image:: https://github.com/ronaldoussoren/objectgraph/actions/workflows/lint.yml/badge.svg
    :target: https://github.com/ronaldoussoren/objectgraph/actions/workflows/lint.yml
 
 .. |docs-badge| image:: https://img.shields.io/readthedocs/objectgraph/latest.svg
