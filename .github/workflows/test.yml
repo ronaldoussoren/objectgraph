@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
+
+      - name: Install package and dependencies
         run: |
           pip install .
 
