@@ -7,10 +7,9 @@ A basic graph datastructure
 from typing import (
     Generic,
     TypeVar,
+    Protocol,
 )
 from collections.abc import Hashable, Iterator
-
-from typing_extensions import Protocol
 
 
 class GraphNode(Protocol):

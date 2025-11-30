@@ -1,6 +1,16 @@
 Release history
 ===============
 
+1.0.6
+-----
+
+- pyproject.toml correctly reflects supported python versions
+
+- pyproject.toml uses standard configuration for package metadata
+  instead of a flit-specific table.
+
+- Drop dependency on ``typing_extensions``.
+
 1.0.5
 -----
 
