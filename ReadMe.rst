@@ -34,4 +34,4 @@ Python 3 code base and full test coverage.
    :target: https://github.com/ronaldoussoren/objectgraph/actions/workflows/lint.yml
 
 .. |docs-badge| image:: https://img.shields.io/readthedocs/objectgraph/latest.svg
-   :target: https://objectgraph.pypa.io
+   :target: https://objectgraph.readthedocs.io
