@@ -26,7 +26,7 @@ jobs:
             ${{ matrix.os }}-${{ matrix.python-version }}-
 
       - name: macOS cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         if: startsWith(matrix.os, 'macOS')
         with:
           path: ~/Library/Caches/pip
@@ -37,7 +37,7 @@ jobs:
             ${{ matrix.os }}-${{ matrix.python-version }}-
 
       - name: Windows cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         if: startsWith(matrix.os, 'windows')
         with:
           path: ~\AppData\Local\pip\Cache
