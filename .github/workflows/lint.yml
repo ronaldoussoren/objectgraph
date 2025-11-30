@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.14"]
-        toxenv: [isort, black, flake8]
+        toxenv: [isort, black, flake8, mypy]
 
     steps:
       - uses: actions/checkout@v1
