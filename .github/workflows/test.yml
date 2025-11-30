@@ -1,4 +1,4 @@
-name: Run Testsuite using Tox
+name: Testsuite
 
 on: [push, pull_request, workflow_call]
 

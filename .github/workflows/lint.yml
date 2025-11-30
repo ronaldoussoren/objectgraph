@@ -1,4 +1,4 @@
-name: Run linting tools (isort, black, flake8)
+name: Linting with isort, black, flake8 and mypy
 
 on: [push, pull_request]
 
